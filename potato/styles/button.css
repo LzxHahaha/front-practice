@@ -1,0 +1,29 @@
+.button,
+.button:link,
+.button:visited {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.button:hover,
+.button:active {
+    color: lightgray;
+    border-color: lightgray;
+}
+
+.button-primer,
+.button-primer:link,
+.button-primer:visited {
+    color: #6FC661;
+    border-color: #6FC661;
+}
+
+.button-primer:hover,
+.button-primer:active {
+    color: #1FA361;
+    border-color: #1FA361;
+}

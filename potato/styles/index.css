@@ -1,0 +1,315 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Microsoft YaHei UI Light", sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a.active {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.brand-text {
+    font-weight: bold;
+}
+
+.content-page {
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-size: cover;
+    background: no-repeat center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.theme-page {
+    padding: 120px 10px 0 10px;
+    background: linear-gradient(to bottom, #B19983, #C4AC96);
+    margin: 0;
+}
+
+.theme-page > h1,
+.theme-page > p {
+    color: white;
+}
+
+.title {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.potato {
+    height: auto;
+    margin-top: 5%;
+}
+
+.theme-page .potato {
+    width: 35%;
+}
+
+.shape-page {
+    background-size: cover;
+    background-image: url('../image/shape-bg.jpg');
+}
+
+.shape-page > h1,
+.shape-page > p {
+    color: #686868;
+}
+
+.shape-page .potato {
+    width: 50%;
+}
+
+.shape-page .split {
+    display: inline-block;
+    max-height: 115px;
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+.health-page {
+    background-image: url('../image/health-bg.jpg');
+}
+
+.health-page h1,
+.health-page p {
+    color: white;
+}
+
+.health-page .potato {
+    width: 35%;
+}
+
+.health-page .data {
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    width: 150px;
+    line-height: 36px;
+    margin-top: 15px;
+}
+
+.data .data-title {
+    font-size: 18px;
+}
+
+.transform-page {
+    background-image: url('../image/transform-bg.jpg');
+}
+
+.transform-page h1,
+.transform-page p {
+    color: #816F2B;
+}
+
+.transform-page .potato {
+    width: 35%;
+}
+
+.customer-page {
+    background-image: url('../image/custom-bg.jpg');
+}
+
+.slider {
+    position: relative;
+    margin-top: 250px;
+    overflow: hidden;
+}
+
+.slider-item {
+    display: none;
+    text-align: center;
+    width: 48%;
+}
+
+.slider-content {
+    min-height: 100px;
+}
+
+.slider-item.active {
+    display: inline-block;
+    margin: 0 auto;
+    opacity: 1;
+    transition: 1s;
+}
+
+.slider-item.prev {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -35%;
+    opacity: 0.5;
+}
+
+.slider-item.next {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -35%;
+    opacity: 0.5;
+}
+
+.slider-button,
+.slider-button:link,
+.slider-button:hover,
+.slider-button:active,
+.slider-button:visited {
+    position: absolute;
+    top: 25%;
+    color: #BABABA;
+    font-size: 60px;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+
+.slider-button:active {
+    color: #2B2B2B;
+    background-color: transparent;
+}
+
+.slider-button-left {
+    left: 20%;
+}
+
+.slider-button-right {
+    right: 20%;
+}
+
+.line {
+    height: 1px;
+    background-color: #BABABA;
+    margin: 10px 0;
+}
+
+.customer-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.customer-id {
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+.order-page {
+    background-color: #F4F4F4;
+}
+
+.order-page h1,
+.order-page p,
+.order-page ul {
+    color: #686868;
+}
+
+.order-page ul {
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.order-container {
+    margin: 70px auto 0 auto;
+    max-width: 1024px;
+}
+
+.order-item {
+    display: inline-block;
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.hint-text {
+    font-size: 12px;
+}
+
+.order-image-container {
+    height: 250px;
+    text-align: center;
+}
+
+.order-image {
+    height: auto;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.order-image-lite {
+    height: auto;
+    width: 150px;
+    margin-top: 80px;
+}
+
+.order-image-pro {
+    height: auto;
+    width: 230px;
+    margin-top: 40px;
+}
+
+footer {
+    padding: 40px;
+    background-color: white;
+}
+
+.footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: inline-block;
+    color: #999;
+    width: 46%;
+    vertical-align: top;
+}
+
+.footer-links {
+    text-align: right;
+}
+
+.footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.footer-content ul li a {
+    color: #999;
+}
