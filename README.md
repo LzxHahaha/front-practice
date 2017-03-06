@@ -4,4 +4,4 @@
 
 ## List
 
-* [Potato](./potato.html)：[原稿](https://dribbble.com/shots/2042501-Potato-landing-page)
+* [Potato](./potato/index.html)：[原稿](https://dribbble.com/shots/2042501-Potato-landing-page)
