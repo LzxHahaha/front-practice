@@ -2,7 +2,7 @@
  * Created by LzxHahaha on 2017/3/5.
  */
 
-function renderLink(url) {
+function renderLink(projectName) {
   var body = document.getElementsByTagName('body')[0];
   var gitButton = document.createElement('a');
   gitButton.style.position = 'fixed';
@@ -10,6 +10,6 @@ function renderLink(url) {
   gitButton.style.bottom = "20px";
   gitButton.style.right = 0;
   gitButton.style.background = "#007ACC";
-  gitButton.innerHTML = "<a href=\"" + url + "\" target='_blank'>Open in Github.</a>";
+  gitButton.innerHTML = "<a href=\"https://github.com/LzxHahaha/front-practice/" + projectName + "./index.html\" target='_blank'>Open in Github.</a>";
   body.appendChild(gitButton);
 }
