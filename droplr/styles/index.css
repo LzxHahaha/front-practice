@@ -1,0 +1,292 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI", sans-serif;
+}
+
+.tool-bar {
+    background-color: #1B2224;
+    padding: 20px;
+}
+
+.tool-bar .logo {
+    float: left;
+    margin: 5px 20px;
+    height: 25px;
+    width: auto;
+}
+
+.tool-bar .head {
+    text-align: right;
+}
+
+.tool-bar .search-box {
+    display: inline-block;
+    height: 30px;
+    border-radius: 17px;
+    background-color: white;
+    padding: 2px 17px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.tool-bar .search-input {
+    border: none;
+}
+
+.tool-bar .search-box span {
+    cursor: pointer;
+}
+
+.tool-bar .search-input:focus {
+    outline: none;
+}
+
+.tool-bar .avatar-container {
+    float: right;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.tool-bar .avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.tool-bar .avatar-unread {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    background-color: #DB5B5B;
+}
+
+.container {
+    height: calc(100% - 70px);
+}
+
+.menu {
+    position: relative;
+    float: left;
+    background-color: #232B2D;
+    width: 250px;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.upload-box {
+    height: 60px;
+    background-color: #2EB398;
+    padding: 20px 25px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.upload-box .inner {
+    border: 2px dashed white;
+    height: 100%;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    padding: 25px;
+    padding-bottom: 100px;
+}
+
+.menu-container ul {
+    padding: 0;
+    margin: 10px -25px 25px -25px;
+    list-style: none;
+}
+
+.menu-container .header {
+    color: #6F7B7E;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-container ul > li {
+    color: #6F7B7E;
+    padding: 7px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.menu-container ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-container ul > li.active {
+    color: white;
+}
+
+.menu-container .unread {
+    float: right;
+    margin: 2px 0;
+    background-color: #6F7B7E;
+    color: #1B2224;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.size-box {
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    height: 60px;
+    padding: 20px 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #232B2D;
+}
+
+.size-box .plus {
+    font-size: 14px;
+    float: right;
+    color: #6F7B7E;
+    cursor: pointer;
+}
+
+.size-box .progress-box {
+    height: 5px;
+    background-color: #2E3739;
+}
+
+.size-box .progress {
+    height: 5px;
+    background-color: #DB5B5B;
+    width: 40%;
+}
+
+.content {
+    margin-left: 200px;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-weight: normal;
+}
+
+.content-header {
+    padding-bottom: 10px;
+    border-bottom: 2px #EDF0F1 solid;
+    margin-bottom: 10px;
+}
+
+.content-header .button {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    color: #B7C6C9;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    border: 2px #B7C6C9 solid;
+    border-radius: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content-header .button.active {
+    color: #2EB398;
+    border-color: #2EB398;
+}
+
+.content-header .select-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-header .tag {
+    float: right;
+    padding: 4px 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    color: #B7C6C9;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.content-header .tag.active {
+    color: white;
+    background-color: #2EB398;
+}
+
+.content-item {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    height: 220px;
+    margin: 5px;
+}
+.content-item.active {
+    background-color: #E4E9EB;
+}
+
+.content-item.active:active,
+.content-item:active {
+    background-color: #C4C9CB;
+}
+
+.content-item .image {
+    height: 150px;
+    background-size: cover;
+    background: no-repeat center;
+    margin-bottom: 10px;
+}
+
+.content-item .title {
+    font-size: 14px;
+}
+
+.content-item .subtitle {
+    color: #B7C6C9;
+    font-size: 12px;
+}

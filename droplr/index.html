@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="https://dribbble.com/shots/1309461-Droplr-Dashboard/attachments/183279" />
+    <title>Droplr</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div class="tool-bar">
+    <img src="images/logo.png" class="logo">
+    <div class="head">
+        <div class="search-box">
+            <input name="search" class="search-input">
+            <span>搜索</span>
+        </div>
+        <div class="avatar-container">
+            <img src="images/avatar.jpg" class="avatar-container">
+            <div class="avatar-unread">8</div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="menu">
+        <div class="upload-box">
+            <div class="inner">上传</div>
+        </div>
+        <div class="menu-container">
+            <span class="header">main</span>
+            <ul>
+                <li class="active">overview</li>
+                <li>activity</li>
+                <li>dearest</li>
+                <li>folders</li>
+            </ul>
+            <span class="header">filter</span>
+            <ul>
+                <li>images</li>
+                <li>
+                    audio
+                    <div class="unread">8</div>
+                </li>
+                <li>video</li>
+                <li>notes</li>
+                <li>links</li>
+                <li>files</li>
+            </ul>
+        </div>
+        <div class="size-box">
+            <p>
+                50GB/100GB
+                <span class="plus">+</span>
+            </p>
+            <div class="progress-box">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <h1>Overview</h1>
+            <div>
+                <div class="button active">+</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <span class="select-text"><span id="selectText">0</span> Selected items</span>
+                <div class="tag active">Uploaded</div>
+                <div class="tag">Views</div>
+                <div class="tag">Size</div>
+                <div class="tag">Name</div>
+            </div>
+        </div>
+        <div id="content-list">
+        </div>
+    </div>
+</div>
+<script src="../general/git-link.js"></script>
+<script>
+  renderLink('droplr');
+  var selectCount = 0;
+  var selectTextEl = document.getElementById('selectText');
+
+  function renderList(data) {
+    var domList = document.getElementById('content-list');
+    data.forEach(function (el) {
+      var item = document.createElement('div');
+      item.classList.add('content-item');
+      if (el.active) {
+        item.classList.add('active');
+        ++selectCount;
+      }
+      item.innerHTML = '<div class="image" style="background-image: url(\'' + el.image + '\')"></div>' +
+        '<p class="title">'+ el.title +
+        '<br><span class="subtitle">' + el.subtitle + '</span></p></div>';
+      item.onclick = function () {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          selectTextEl.innerText -= 1;
+        }
+        else {
+          item.classList.add('active');
+          selectTextEl.innerText = parseInt(selectTextEl.innerText) + 1;
+        }
+      };
+      domList.appendChild(item);
+    });
+    selectTextEl.innerText = selectCount;
+  }
+
+  data = [];
+  for (var i = 0; i < 25; ++i) {
+    var item = {image: './images/item.png', title: 'Title', subtitle: 'subtitle'};
+    if (i % 5 == 1) {
+      item.active = true;
+    }
+    data.push(item);
+  }
+  renderList(data);
+</script>
+</body>
+</html>

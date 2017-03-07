@@ -10,6 +10,7 @@ function renderLink(projectName) {
   gitButton.style.bottom = "20px";
   gitButton.style.right = 0;
   gitButton.style.background = "#007ACC";
+  gitButton.style.color = "#FFF";
   gitButton.innerHTML = "<a href=\"https://github.com/LzxHahaha/front-practice/blob/master/" + projectName + "/index.html\" target='_blank'>Open in Github.</a>";
   body.appendChild(gitButton);
 }

@@ -8,4 +8,5 @@
 
 ## List
 
-* [Potato](https://lzxhahaha.github.io/front-practice/potato/index.html)：[原稿](https://dribbble.com/shots/2042501-Potato-landing-page)
+* [Potato](https://lzxhahaha.github.io/front-practice/potato/index.html): [原稿](https://dribbble.com/shots/2042501-Potato-landing-page)
+* [droplr](https://lzxhahaha.github.io/front-practice/droplr/index.html): [原稿](https://dribbble.com/shots/1309461-Droplr-Dashboard/attachments/183279)
